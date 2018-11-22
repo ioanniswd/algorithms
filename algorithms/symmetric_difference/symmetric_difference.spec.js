@@ -13,9 +13,11 @@ describe('symmetric_difference', function() {
     });
 
     it('[1, 2, 3, 3], [5, 2, 1, 4]', function() {
-      expect(symmetric_difference([1, 2, 3, 3], [5, 2, 1, 4])).to.deep.equal([
-        3, 4, 5
-      ]);
+      // NOTE: tmp error to test build failing
+      // expect(symmetric_difference([1, 2, 3, 3], [5, 2, 1, 4])).to.deep.equal([
+      //   3, 4, 5
+      // ]);
+      expect(symmetric_difference([1, 2, 3, 3], [5, 2, 1, 4])).to.deep.equal([]);
     });
 
     it('[1, 2, 3], [5, 2, 1, 4, 5]', function() {
